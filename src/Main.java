@@ -14,7 +14,7 @@ public class Main {
         System.out.println(l_chislo + " - длинное 64-х разрядное целое число");
         System.out.println(fl + " - число с плавающей запятой одинарной точности");
         System.out.println(dbl + " - число с плавающей запятой двойной точности");
-        System.out.println(ch + " - символ");
+        System.out.println(ch + " - это символ");
         System.out.println(bool + " - логический тип данных");
     }
 }
