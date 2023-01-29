@@ -6,7 +6,7 @@ public class Main {
         // двоичные числа
       /*byte x = 0b10; //зпись двоичного числа
        byte y = 0b11;
-       int a = scanner.nextInt(2); // вврд двоичного числа
+       int a = scanner.nextInt(2); // ввод двоичного числа
        int c = scanner.nextInt(2);
         int d = a*c;
         String s = "110";
