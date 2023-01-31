@@ -1,8 +1,14 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner= new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         // двоичные числа
       /*byte x = 0b10; //зпись двоичного числа
        byte y = 0b11;
@@ -59,8 +65,72 @@ String stringNum=Integer.toString(num2, 16);
         int n = 7;
         double S = n * Math.pow(a, 2) / (4 * Math.tan(Math.PI / n));
         System.out.println(S);*/
+//слияние двух отсортированных массивов в 1 int массив
+        /*int[] a1 = new int[] {1, 2};
+        int[] a2 = new int[] {1};
+            ArrayList<Integer> a3 = new ArrayList<Integer>();
+            int x=0;
+            int y=0;
+            for(int i=y; i<a1.length; i++){
+                for(int j=x; j<a2.length; j++){
+                    if (a2[j]<a1[i]){
+                        a3.add(a2[j]);
+                        x=j+1;
+                    }else{
+                        a3.add(a1[i]);
 
+                        break;
+                    }
+                    y=i;
+                }
+            }
+            if((a2.length<1)){
+                for(int i=0; i<a1.length; i++){
+                    a3.add(a1[i]);
+                }
+            } else if ((a2.length>0)&&(a2[a2.length-1]<a1[y])) {
+                for(int i=y; i<a1.length; i++){
+                    a3.add(a1[i]);
+                }
+            }
+        for(int j=x; j<a2.length; j++){
+            a3.add(a2[j]);
 
+        }
+        int[] a4 = new int[a3.size()];
+        for(int n = 0; n<a3.size(); n++){
+            a4[n]=a3.get(n);
+        }
+
+        System.out.println(Arrays.toString(a4));*/
+//метод, который будет группировать строчки по ролям, пронумеровывать их и возвращать результат в виде готового текста
+        /*String[] roles = {
+                "Городничий", "Аммос Федорович",
+                "Артемий Филиппович",
+                "Лука Лукич"};
+        String[] textLines = {
+                "Городничий: Я пригласил вас, господа, с тем, чтобы сообщить вам пренеприятное известие: к нам едет ревизор.",
+                "Аммос Федорович: Как ревизор?",
+                "Артемий Филиппович: Как ревизор?",
+                "Городничий: Ревизор из Петербурга, инкогнито. И еще с секретным предписаньем.",
+                "Аммос Федорович: Вот те на!",
+                "Артемий Филиппович: Вот не было заботы, так подай!",
+                "Лука Лукич: Господи боже! еще и с секретным предписаньем!"};
+
+       StringBuilder newText= new StringBuilder("");
+        for (String role: roles) {
+            newText.append(role + ":\n");
+            int len = role.length() + 1;
+            for (int i = 0; i < textLines.length; i++) {
+                if (textLines[i].startsWith(role+':')) {
+
+                    newText.append((i + 1) + ")");
+                    newText.append(textLines[i].substring(len)+"\n");
+                }
+            }
+            newText.append("\n");
+        }
+        System.out.println(newText.toString());*/
 //подсчет кораблей для морского боя
             /*int[][] field = new int[][]{{0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
                 {0, 1, 1, 0, 0, 0, 1, 0, 0, 1},
