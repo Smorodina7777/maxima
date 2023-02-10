@@ -13,7 +13,6 @@ public class MainCopier {
         try (FileWriter writer = new FileWriter("D:\\Users\\Lena\\Projects\\maxima\\src\\lesson9\\Hobby_копия.txt", false)) {
             String nul = "";
             writer.write(nul);
-            writer.close();
         } catch (IOException ex) {
             throw new RuntimeException(ex);
 

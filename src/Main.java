@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner= new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         // двоичные числа
       /*byte x = 0b10; //зпись двоичного числа
        byte y = 0b11;
@@ -59,8 +59,23 @@ String stringNum=Integer.toString(num2, 16);
         int n = 7;
         double S = n * Math.pow(a, 2) / (4 * Math.tan(Math.PI / n));
         System.out.println(S);*/
+//Расстояние между двумя точками земли
+/*//        Введите широту координаты Новосибирска x1
+//        Введите долготу координаты Новосибирска y1
+//        Введите широту координаты Москвы x2
+//        Введите долготу координаты Москвы y2
+        double  r = 6371.01;//километров
+        double x1= 55.01;
+        double y1 = 82.55;
+        double x2 = 55.44;
+        double y2 = 37.36;
+        x1 = Math.toRadians(x1);
+        y1 = Math.toRadians(y1);
+        x2 = Math.toRadians(x2);
+        y2 = Math.toRadians(y2);
 
-
+double S = r * Math.acos(Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2));
+        System.out.println(S);//километров*/
 //подсчет кораблей для морского боя
             /*int[][] field = new int[][]{{0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
                 {0, 1, 1, 0, 0, 0, 1, 0, 0, 1},
@@ -207,7 +222,27 @@ String stringNum=Integer.toString(num2, 16);
         System.out.println(cnt2);
         System.out.println(cnt3);
         System.out.println(cnt4);*/
-
+//Подсчет разных символов в строке
+        /*String str = "Aa kiu, я swd skieo 236587. GH kiu: sieo ?? 25,33 Привет";
+        char[] chs = str.toCharArray();
+        int count1 = 0;//буквы
+        int count2 = 0;//цифры
+        int count3 = 0;//пробелы
+        int count4 = 0;//другие символы
+        for (char ch : chs) {
+            if (Character.isDigit(ch)) {
+                count2++;
+            } else if (Character.isLetter(ch)) {
+                count1++;
+            } else if (Character.isWhitespace(ch)) {
+                count3++;
+            }
+        }
+        count4 = str.length() - count2 - count1 - count3;
+        System.out.println("Букв: " + count1);
+        System.out.println("Цифр: " + count2);
+        System.out.println("Пробелов: " + count3);
+        System.out.println("Других символов: " + count4);*/
     }
 
 }
