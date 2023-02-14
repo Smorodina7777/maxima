@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bcc65f2-dd3a-411d-96d9-1d47367d7940" name="Changes" comment="дженерики">
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="8bcc65f2-dd3a-411d-96d9-1d47367d7940" name="Changes" comment="копир с логами" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,6 +113,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Примитивы" />
     <MESSAGE value="метод подсчета кораблей по размерам для морского боя." />
-    <option name="LAST_COMMIT_MESSAGE" value="метод подсчета кораблей по размерам для морского боя." />
+    <MESSAGE value="копир с логами" />
+    <option name="LAST_COMMIT_MESSAGE" value="копир с логами" />
   </component>
 </project>
