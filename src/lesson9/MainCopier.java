@@ -6,11 +6,9 @@ import java.time.format.DateTimeFormatter;
 
 public class MainCopier {
     public static void main(String[] args) throws IOException {
-        FileWriter writer = null;
-        FileWriter writer2 = null;
-        try (FileReader fr = new FileReader("D:\\Users\\Lena\\Projects\\maxima\\src\\lesson9\\Hobby.txt")) {
-            writer = new FileWriter("D:\\Users\\Lena\\Projects\\maxima\\src\\lesson9\\Hobby_копия.txt", false);
-            writer2 = new FileWriter("D:\\Users\\Lena\\Projects\\maxima\\src\\lesson9\\log.txt", true);
+        try (FileReader fr = new FileReader("D:\\Users\\Lena\\Projects\\maxima\\src\\lesson9\\Hobby.txt");
+             FileWriter writer =  new FileWriter("D:\\Users\\Lena\\Projects\\maxima\\src\\lesson9\\Hobby_копия.txt", false);
+             FileWriter writer2 =  new FileWriter("D:\\Users\\Lena\\Projects\\maxima\\src\\lesson9\\log.txt", true)) {
             BufferedReader reader = new BufferedReader(fr);
             String line = reader.readLine();
             while (line != null) {
@@ -24,11 +22,6 @@ public class MainCopier {
             throw new RuntimeException(e);
         } catch (IOException e) {
             throw new RuntimeException(e);
-        } finally {
-            assert writer != null;
-            writer.close();
-            assert writer2 != null;
-            writer2.close();
         }
     }
 }
