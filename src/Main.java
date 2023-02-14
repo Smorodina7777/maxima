@@ -277,6 +277,23 @@ String stringNum=Integer.toString(num2, 16);
         System.out.println(cnt2);
         System.out.println(cnt3);
         System.out.println(cnt4);*/
+//Расстояние между двумя точками земли
+/*//        Введите широту координаты Новосибирска x1
+//        Введите долготу координаты Новосибирска y1
+//        Введите широту координаты Москвы x2
+//        Введите долготу координаты Москвы y2
+        double  r = 6371.01;//километров
+        double x1= 55.01;
+        double y1 = 82.55;
+        double x2 = 55.44;
+        double y2 = 37.36;
+        x1 = Math.toRadians(x1);
+        y1 = Math.toRadians(y1);
+        x2 = Math.toRadians(x2);
+        y2 = Math.toRadians(y2);
+
+double S = r * Math.acos(Math.sin(x1) * Math.sin(x2) + Math.cos(x1) * Math.cos(x2) * Math.cos(y1 - y2));
+        System.out.println(S);//километров*/
 
     }
 
