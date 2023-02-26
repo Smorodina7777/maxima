@@ -28,8 +28,8 @@ public class Case3Orderes {
         List<Item> items = orderList.stream()
                 .filter(order -> order.getDate().compareTo(start) >= 0)
                 .filter(order -> order.getDate().compareTo(finish) <= 0)
-                .flatMap(order -> order.getItemList().stream())
-                //.filter(item -> item.getName().toLowerCase().contains("первый")))
+                .flatMap(order -> order.getItemList().stream()
+                .filter(item -> item.getName().toLowerCase().contains("первый")))
                 .collect(Collectors.toList());
 
         for (Item item : items) {
